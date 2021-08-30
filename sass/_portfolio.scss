@@ -1,0 +1,39 @@
+.portfolio {
+  overflow: hidden;
+  background-color: whitesmoke;
+
+  &__content {
+    padding: 0 3rem;
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 0.5rem;
+    display: block;
+    justify-self: center;
+  }
+  &__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--margin-botton-0-5);
+  }
+
+  &__description {
+    margin-bottom: var(--margin-botton-0-75);
+  }
+  &__btn:hover .btn__icon {
+    transform: translateX(0.25rem);
+  }
+}
+
+.swiper-portfolio-icon {
+  font-size: 2rem;
+  color: var(--first-color);
+  position: relative;
+}
+
+.swiper-button-prev {
+  left: -5rem;
+}
+.swiper-button-next {
+  right: -5rem;
+}

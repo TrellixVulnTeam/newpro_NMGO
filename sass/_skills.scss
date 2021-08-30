@@ -1,0 +1,118 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    row-gap: 0;
+    width: 100%;
+    padding: 0 3rem;
+  }
+
+  .skills__content.open .skills__list {
+    height: max-content;
+    padding: 1.5rem 0 0 3rem;
+  }
+
+  .skills__content.open .skills__arrow {
+    transform: rotate(-180deg);
+  }
+  &__header {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-bottom: 1px rgb(219, 219, 219) solid;
+    padding: 0.5rem 0;
+  }
+
+  &__icon,
+  &__arrow {
+    font-size: 2rem;
+    color: var(--first-color);
+  }
+
+  &__list {
+    row-gap: 1.5rem;
+    height: 0;
+    overflow: hidden;
+  }
+
+  &__list.open {
+    height: max-content;
+  }
+
+  &__icon {
+    margin-right: var(--margin-botton-0-75);
+  }
+  &__title {
+    font-size: var(--h3-font-size);
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+  }
+  &__subtitle {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+  }
+  &__arrow {
+    margin-left: auto;
+    transition: ease 0.4s;
+  }
+
+  &__arrow.open {
+    transform: rotate(180deg);
+  }
+  &__name {
+    font-size: var(--regular-font-size);
+    font-weight: var(--font-medium);
+  }
+  &__bar,
+  &__percentage {
+    height: 5px;
+    border-radius: 0.25rem;
+  }
+  &__bar {
+    background-color: var(--first-color-lighter);
+  }
+  &__percentage {
+    display: block;
+    background-color: var(--first-color);
+  }
+  &__html {
+    width: 90%;
+  }
+  &__css {
+    width: 80%;
+  }
+  &__javascript {
+    width: 60%;
+  }
+  &__react {
+    width: 85%;
+  }
+  &__php {
+    width: 10%;
+  }
+  &__firebase {
+    width: 80%;
+  }
+  &__node {
+    width: 20%;
+  }
+  &__python {
+    width: 5%;
+  }
+  &__figma {
+    width: 90%;
+  }
+  &__photoshop {
+    width: 95%;
+  }
+  &__sketch {
+    width: 90%;
+  }
+  &__ai {
+    width: 85%;
+  }
+}

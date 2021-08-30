@@ -1,0 +1,111 @@
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__container {
+    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &__content {
+    position: relative;
+    background-color: var(--container-color);
+    padding: 5.5rem 5rem 1.25rem 2rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    transition: ease 0.3s;
+  }
+
+  &__content:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  &__icon {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    margin-bottom: var(--margin-botton-1);
+  }
+  &__title {
+    font-size: var(--h3-font-size);
+    margin-bottom: var(--margin-botton-1);
+    font-weight: var(--font-medium);
+  }
+  &__btn {
+    cursor: pointer;
+    font-size: var(--small-font-size);
+  }
+
+  &__btn:hover .btn__icon {
+    transform: translateX(0.25rem);
+  }
+  &__modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    z-index: var(--z-modal);
+    transition: ease 0.4s;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &__modal-content {
+    position: relative;
+    background-color: var(--container-color);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+  }
+  &__modal-services {
+    row-gap: 1rem;
+  }
+  &__modal-service {
+    display: flex;
+  }
+  &__modal-title {
+    font-size: var(--h3-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--margin-botton-1-5);
+  }
+  &__modal-close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    color: var(--first-color);
+    cursor: pointer;
+  }
+  &__modal-icon {
+    color: var(--first-color);
+    margin-right: var(--margin-botton-0-25);
+  }
+  &__ {
+  }
+  &__ {
+  }
+  &__ {
+  }
+  &__ {
+  }
+  &__ {
+  }
+  &__ {
+  }
+  &__ {
+  }
+  &__ {
+  }
+  &__ {
+  }
+}
+
+.active-modal {
+  opacity: 1;
+  visibility: visible;
+}
